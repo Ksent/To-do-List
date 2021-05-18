@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>To-do List</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+
+    <svg style="display:none">
+
+      <symbol viewBox="0 0 46 46" id="icon-type">
+        <g>
+          <line stroke-width="2" stroke-linecap="round" x1="28" x2="23" y1="21" y2="26"></line>
+          <line stroke-width="2" stroke-linecap="round" x1="23" x2="18" y1="26" y2="21"></line>
+        </g>
+      </symbol>
+
+      <symbol viewBox="0 0 46 46" id="icon-home">
+        <g>
+          <line stroke-width="2" x1="27" x2="27" y1="19" y2="15"></line>
+          <line stroke-width="2" x1="31" x2="22.5" y1="22" y2="16"></line>
+          <line stroke-width="2" x1="23.5" x2="15" y1="16" y2="22"></line>
+          <line stroke-width="1" x1="17" x2="17" y1="29.5" y2="21"></line>
+          <line stroke-width="1" x1="16.5" x2="29.5" y1="29.5" y2="29.5"></line>
+          <line stroke-width="1" x1="29" x2="29" y1="21" y2="29.5"></line>
+          <rect x="21.5" y="24.5" width="3" height="5"></rect>
+        </g>
+      </symbol>
+
+      <symbol viewBox="0 0 46 46" id="icon-work">
+        <g>
+          <rect stroke-width="1.5" x="20" y="16.5" rx="1" width="6" height="2.5"></rect>
+          <rect stroke-width="1.5" x="15.5" y="19" rx="1" width="15" height="10"></rect>
+          <line stroke-width="1.5" stroke-linecap="round" x1="21.5" x2="16.5" y1="24" y2="23"></line>
+          <line stroke-width="1.5" stroke-linecap="round" x1="24.5" x2="29.5" y1="24" y2="23"></line>
+          <rect stroke-width="1" x="21.5" y="23" width="3" height="2"></rect>
+        </g>
+      </symbol>
+
+      <symbol viewBox="0 0 46 46" id="icon-shop">
+        <g>
+          <line stroke-width="1.5" stroke-linecap="round" x1="13" x2="15" y1="16" y2="16"></line>
+          <line stroke-width="1.5" stroke-linecap="round" x1="20" x2="16" y1="27" y2="16"></line>
+          <line stroke-width="1.5" stroke-linecap="round" x1="20.5" x2="29" y1="27" y2="27"></line>
+          <line stroke-width="1.5" stroke-linecap="round" x1="20" x2="27.5" y1="24" y2="24"></line>
+          <line stroke-width="1.5" stroke-linecap="round" x1="29.5" x2="28.5" y1="19" y2="24"></line>
+          <line stroke-width="1.5" stroke-linecap="round" x1="18" x2="29.5" y1="18" y2="18"></line>
+          <circle fill="#7dc4a3" cx="21.5" cy="30.5" r="1"></circle>
+          <circle fill="#7dc4a3" cx="27.5" cy="30.5" r="1"></circle>
+        </g>
+      </symbol>
+      
+      <symbol viewBox="0 0 16 16" id="icon-toggle">
+        <rect x="0" y="0" width="16" height="16"></rect>
+      </symbol>
+
+      <symbol viewBox="0 0 22 22" id="icon-checkmark">
+        <g>
+          <line stroke-width="3" stroke-linecap="round" x1="5" x2="8" y1="9" y2="14"></line>
+          <line stroke-width="2" stroke-linecap="round" x1="8" x2="17" y1="15" y2="1"></line>
+        </g>  
+      </symbol>
+
+      <symbol viewBox="0 0 16 16" id="icon-delete">
+        <g>
+          <line x1="4" x2="12" y1="4" y2="12"></line>
+          <line x1="4" x2="12" y1="12" y2="4"></line>
+        </g>
+      </symbol>
+
+    </svg>
+
+    <section class="tasker">
+
+      <header class="tasker__header">
+        <h1 class="tasker__title">Список задач</h1>
+        <form class="tasker__task-form">
+
+          <label for="enter-task"></label>
+          <input class="tasker__new-task" type="text" name="enter-task" id="enter-task" placeholder="Добавить задачу" required>
+          
+          <label for="type-task"></label>
+          <select class="tasker__type-task" name="type-task" id="type-task">
+            <option class="tasker__type-option tasker__type-option--color" value="1">Выбрать:</option>
+            <option class="tasker__type-option" value="2">Дом</option>
+            <option class="tasker__type-option" value="3">Работа</option>
+            <option class="tasker__type-option" value="4">Покупки</option>
+          </select>
+          <svg class="tasker__type-mark" width="46" height="46" stroke="#7dc4a3" fill="transparent"> 
+            <use class="tasker__type-img" xlink:href="#icon-type"></use>  
+          </svg>
+
+          <button class="tasker__add-btn">
+            <svg width="46" height="46" fill="#7dc4a3">
+              <g>
+                <rect x="21" y="15" width="4" height="16"></rect>
+                <rect x="15" y="21" width="16" height="4"></rect>
+              </g>
+            </svg>
+          </button>
+
+        </form>
+      </header>
+
+      <section class="tasker__main">
+        <ul class="tasker__task-list">
+        </ul>
+      </section>
+
+    </section>
+
+    <script src="js/tasker.js"></script>
+  </body>
+</html>
