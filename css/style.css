@@ -40,7 +40,7 @@ a {
   margin: 5% 0;
   text-align: center;
   color: #54849b;
-  text-shadow: -1px -1px #ffffff, -2px -2px #ffffff, -1px 1px #ffffff, -2px 2px #ffffff, 1px 1px #ffffff, 2px 2px #ffffff, 1px -1px #ffffff, 2px -2px #ffffff, -3px -3px 2px #c9cbcc, -3px 3px 2px #c9cbcc, 3px 3px 2px #c9cbcc, 3px -3px 2px #c9cbcc;
+  text-shadow: -1px -1px #ffffff, -2px -2px #ffffff, -1px 1px #ffffff, -2px 2px #ffffff, 1px 1px #ffffff, 2px 2px #ffffff, 1px -1px #ffffff, 2px -2px #ffffff, -3px -3px 2px #c9cbcc, -3px 3px 2px #c9cbcc, 3px 3px 2px #c9cbcc, 3px -3px 2px #c9cbcc;
 }
 
 .tasker__task-form {
